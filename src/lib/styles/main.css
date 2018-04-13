@@ -1,0 +1,25 @@
+body {
+  background: orange !important; }
+
+.carouxel {
+  position: relative;
+  background: black;
+  display: flex;
+  height: 768px;
+  width: 100%; }
+  .carouxel__image {
+    position: absolute;
+    display: block;
+    width: 100%; }
+
+.slides {
+  position: relative; }
+  .slides .slick-prev, .slides .slick-next {
+    position: absolute;
+    top: 50%; }
+  .slides .slick-prev {
+    left: 5%;
+    z-index: 999; }
+  .slides .slick-next {
+    right: 5%;
+    z-index: 999; }

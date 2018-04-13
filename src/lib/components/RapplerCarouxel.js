@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 // Application components
 import React from 'react';
-import './RapplerCarouxel.css';
+import '../styles/main.css';
 import RapplerCarouxelItem from '../components/RapplerCarouxelItem';
 
 export default class RapplerCarouxel extends React.Component {
@@ -50,9 +50,11 @@ export default class RapplerCarouxel extends React.Component {
     var settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplay: true,
+      className: "slides"
     }
 
     // Override default settings

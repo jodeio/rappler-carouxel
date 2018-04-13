@@ -1,6 +1,6 @@
 // Application components
 import React from 'react';
-import './RapplerCarouxel.css';
+import '../styles/main.css';
 
 export default class RapplerCarouxelItem extends React.Component {
     constructor() {
@@ -13,10 +13,10 @@ export default class RapplerCarouxelItem extends React.Component {
 
     render() {
         return (
-            <div>
-                <img src={this.props.carouxel.images[0].full}/>
-                <h1>{this.props.carouxel.title}</h1>
-                <p>{this.props.carouxel.metadesc}</p>
+            <div className="carouxel">
+                <img className="carouxel__image" src={this.props.carouxel.images[0].full}/>
+                {/* <h1>{this.props.carouxel.title}</h1>
+                <p>{this.props.carouxel.metadesc}</p> */}
             </div>
         );
     }
