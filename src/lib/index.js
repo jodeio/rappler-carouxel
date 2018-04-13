@@ -1,8 +1,3 @@
-import Example from './components/Example';
-import SecondExample from './components/SecondExample';
+import RapplerCarouxel from './components/RapplerCarouxel';
 
-export default Example;
-
-export {
-  SecondExample,
-};
+export default RapplerCarouxel;
