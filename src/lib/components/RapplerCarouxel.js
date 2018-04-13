@@ -1,8 +1,79 @@
+// Application components
 import React from 'react';
 import './RapplerCarouxel.css';
 
-const RapplerCarouxel = () => (
-  <div>Lib goes here</div>
-);
+// React Slick
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export default RapplerCarouxel;
+export default class RapplerCarouxel extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      api: props.api,
+      settings: props.settings,
+      data: []
+    }
+  }
+
+  componentDidMount() {
+    this.checkSettings();
+    this.retrieveData();
+  }
+
+  // Retrieve data
+  retrieveData = () => {
+    if(this.state.api){
+      fetch(this.state.api)
+      .then(response => {
+        if (response.ok) {
+          response
+            .json()
+            .then(data => {
+              this.setState(
+                this.state.data = data,
+              )
+              console.log(this.state.data);
+            });
+        }
+      }).catch(e => {
+        console.log(e);
+      });
+    }
+  }
+
+  // Verify settings to be passed on react-slick
+  checkSettings = () => {
+    // Init default settings
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+
+    // Override default settings
+    if (this.state.settings != null) {
+      settings = this.state.settings;
+    }
+
+    // Apply settings
+    this.setState(
+      this.state.settings = settings
+    )
+  }
+
+  render() {
+    return (
+      <div>
+        <Slider {...this.state.settings}>
+          {/* 
+            Populate carousel data here via api
+          */}
+        </Slider>
+      </div>
+    );
+  }
+}
