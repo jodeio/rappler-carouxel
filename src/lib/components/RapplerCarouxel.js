@@ -1,11 +1,12 @@
-// Application components
-import React from 'react';
-import './RapplerCarouxel.css';
-
 // React Slick
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// Application components
+import React from 'react';
+import './RapplerCarouxel.css';
+import RapplerCarouxelItem from '../components/RapplerCarouxelItem';
 
 export default class RapplerCarouxel extends React.Component {
   constructor(props) {
@@ -24,22 +25,22 @@ export default class RapplerCarouxel extends React.Component {
 
   // Retrieve data
   retrieveData = () => {
-    if(this.state.api){
+    if (this.state.api) {
       fetch(this.state.api)
-      .then(response => {
-        if (response.ok) {
-          response
-            .json()
-            .then(data => {
-              this.setState(
-                this.state.data = data,
-              )
-              console.log(this.state.data);
-            });
-        }
-      }).catch(e => {
-        console.log(e);
-      });
+        .then(response => {
+          if (response.ok) {
+            response
+              .json()
+              .then(data => {
+                this.setState(
+                  this.state.data = data,
+                )
+                console.log(this.state.data);
+              });
+          }
+        }).catch(e => {
+          console.log(e);
+        });
     }
   }
 
@@ -69,9 +70,9 @@ export default class RapplerCarouxel extends React.Component {
     return (
       <div>
         <Slider {...this.state.settings}>
-          {/* 
-            Populate carousel data here via api
-          */}
+          {this.state.data.map((data, key) => {
+            return <RapplerCarouxelItem key={data.id} carouxel={data}/>;
+          })}
         </Slider>
       </div>
     );
