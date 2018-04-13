@@ -42,15 +42,40 @@
     position: relative;
     
     .slick-prev, .slick-next {
-      position: absolute;
-      top: 50%;
+        z-index: 999;
+        position: absolute;
+        top: 50%;
     }
     .slick-prev {
-      left: 5%;
-      z-index: 999;
+        left: 5%;
     }
     .slick-next {
-      right: 5%;
-      z-index: 999;
+        right: 5%;
+    }
+    .slick-dots{
+        z-index: 999;
+        position: relative;
+        top: -50px;
+
+        li:before {
+            content: "○";
+            color: gray;
+            font-size: 170%; /* or whatever */
+            padding-right: 5px;
+         }
+
+         button:before {
+            content: "○";
+            font-size: 170%; /* or whatever */
+            padding-right: 5px;
+         }
+
+        .slick-active:before {
+            content: "○";
+            color: white;
+            font-size: 170%; /* or whatever */
+            padding-right: 5px;
+         }
+         
     }
   }

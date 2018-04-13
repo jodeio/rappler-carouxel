@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:after,
 *:before {
@@ -48,14 +49,34 @@ body {
 .slides {
   position: relative; }
   .slides .slick-prev, .slides .slick-next {
+    z-index: 999;
     position: absolute;
     top: 50%; }
   .slides .slick-prev {
-    left: 5%;
-    z-index: 999; }
+    left: 5%; }
   .slides .slick-next {
-    right: 5%;
-    z-index: 999; }
+    right: 5%; }
+  .slides .slick-dots {
+    z-index: 999;
+    position: relative;
+    top: -50px; }
+    .slides .slick-dots li:before {
+      content: "○";
+      color: gray;
+      font-size: 170%;
+      /* or whatever */
+      padding-right: 5px; }
+    .slides .slick-dots button:before {
+      content: "○";
+      font-size: 170%;
+      /* or whatever */
+      padding-right: 5px; }
+    .slides .slick-dots .slick-active:before {
+      content: "○";
+      color: white;
+      font-size: 170%;
+      /* or whatever */
+      padding-right: 5px; }
 
 @media (min-width: 0px) {
   .carouxel {
