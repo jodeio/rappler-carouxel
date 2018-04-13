@@ -20,7 +20,8 @@
   "homepage": "https://github.com/jodeio/rappler-carouxel#readme",
   "license": "MIT",
   "dependencies": {
-    "react-slick": "^0.23.1"
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "7.1.6",
