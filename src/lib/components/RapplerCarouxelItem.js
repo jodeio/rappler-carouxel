@@ -14,9 +14,11 @@ export default class RapplerCarouxelItem extends React.Component {
     render() {
         return (
             <div className="carouxel">
-                <img className="carouxel__image" src={this.props.carouxel.images[0].full}/>
-                {/* <h1>{this.props.carouxel.title}</h1>
-                <p>{this.props.carouxel.metadesc}</p> */}
+                <img className="carouxel__image" src={this.props.carouxel.images[0].full} />
+                <div className="carouxel__content">
+                    <h1 className="carouxel__headline">{this.props.carouxel.title}</h1>
+                    <p className="carouxel__intro">{this.props.carouxel.metadesc}</p>
+                </div>
             </div>
         );
     }

@@ -1,9 +1,10 @@
 body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background: orange !important; }
 
 .carouxel {
+  text-align: center;
   position: relative;
-  background: black;
   display: flex;
   height: 768px;
   width: 100%; }
@@ -11,6 +12,14 @@ body {
     position: absolute;
     display: block;
     width: 100%; }
+  .carouxel__content {
+    position: absolute;
+    text-align: left;
+    color: black;
+    width: 80%;
+    top: 45%;
+    left: 10%;
+    margin: 0; }
 
 .slides {
   position: relative; }
