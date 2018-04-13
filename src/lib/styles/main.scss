@@ -1,9 +1,21 @@
+// Reset
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    }
+
+// Styles
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background:orange !important;
 }
 
 
-
 // Component styles
 @import '../styles/_carouxel.scss';
+@import '../styles/_responsive.scss';

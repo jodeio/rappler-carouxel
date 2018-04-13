@@ -1,3 +1,12 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background: orange !important; }
@@ -10,7 +19,6 @@ body {
   width: 100%; }
   .carouxel__image {
     position: absolute;
-    display: block;
     width: 100%; }
   .carouxel__content {
     position: absolute;
@@ -19,8 +27,6 @@ body {
     width: 100%;
     top: 25%;
     height: 75%;
-    padding-top: 10%;
-    padding-left: 10%;
     background: -moz-linear-gradient(top, transparent 0%, black 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(top, transparent 0%, black 100%);
@@ -31,9 +37,12 @@ body {
     /* IE6-9 */ }
   .carouxel__headline {
     position: relative;
+    padding-top: 10%;
+    padding-left: 10%;
     width: 80%; }
   .carouxel__intro {
     position: relative;
+    padding-left: 10%;
     width: 80%; }
 
 .slides {
@@ -47,3 +56,44 @@ body {
   .slides .slick-next {
     right: 5%;
     z-index: 999; }
+
+@media (min-width: 0px) {
+  .carouxel {
+    height: 320px; }
+    .carouxel__image {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden; }
+    .carouxel__content {
+      padding: 5%;
+      font-size: 60%; }
+  .slick-dots {
+    display: none !important; } }
+
+@media (min-width: 320px) {
+  .carouxel__image {
+    width: 100%; }
+  .carouxel__content {
+    padding: 5%;
+    font-size: 60%; } }
+
+@media (min-width: 480px) {
+  .carouxel {
+    height: 480px; }
+    .carouxel__content {
+      font-size: 70%; }
+  .slick-dots {
+    display: block !important; } }
+
+@media (min-width: 992px) {
+  .carouxel {
+    height: 600px; }
+    .carouxel__content {
+      font-size: 100%; }
+    .carouxel__headline {
+      padding-top: 10%; } }
+
+@media (min-width: 1200px) {
+  .carouxel__headline {
+    padding-top: 5%; } }
