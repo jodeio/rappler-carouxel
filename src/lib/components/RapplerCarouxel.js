@@ -12,6 +12,7 @@ export default class RapplerCarouxel extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      defaultApi: "http://svc.rappler.com/p/topstories",
       api: props.api,
       settings: props.settings,
       data: []
@@ -25,23 +26,25 @@ export default class RapplerCarouxel extends React.Component {
 
   // Retrieve data
   retrieveData = () => {
-    if (this.state.api) {
-      fetch(this.state.api)
-        .then(response => {
-          if (response.ok) {
-            response
-              .json()
-              .then(data => {
-                this.setState(
-                  this.state.data = data,
-                )
-                console.log(this.state.data);
-              });
-          }
-        }).catch(e => {
-          console.log(e);
-        });
-    }
+    var selectedApi = this.state.api ? this.state.api : this.state.defaultApi;
+    console.log(selectedApi);
+
+    fetch(selectedApi)
+      .then(response => {
+        if (response.ok) {
+          response
+            .json()
+            .then(data => {
+              this.setState(
+                this.state.data = data,
+              )
+              console.log(this.state.data);
+            });
+        }
+      }).catch(e => {
+        console.log(e);
+      });
+
   }
 
   // Verify settings to be passed on react-slick
@@ -73,7 +76,7 @@ export default class RapplerCarouxel extends React.Component {
       <div>
         <Slider {...this.state.settings}>
           {this.state.data.map((data, key) => {
-            return <RapplerCarouxelItem key={data.id} carouxel={data}/>;
+            return <RapplerCarouxelItem key={data.id} carouxel={data} />;
           })}
         </Slider>
       </div>
