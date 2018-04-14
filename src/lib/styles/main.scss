@@ -24,7 +24,11 @@ body{
 .app{
     text-align: center;
 
-    h1{
+    .npm{
+        max-width: 320px;
+    }
+
+    h2{
         color: $accent;
         margin-top: 50px;
         padding: 20px;

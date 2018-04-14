@@ -27,7 +27,6 @@
     }
 
     &__content{
-        padding: 5%;
         font-size: 60%;
     }
   }
@@ -38,7 +37,7 @@
     height: 480px;
 
     &__content{
-        font-size: 70%;
+        font-size: 80%;
     }
   }
 
@@ -60,7 +59,7 @@
     }
 
     &__headline{
-      padding-top: 10%;
+      // padding-top: 10%;
     }
   }
 }
@@ -68,7 +67,7 @@
 @media (min-width: 1200px) {
   .carouxel {
     &__headline{
-      padding-top: 5%;
+      // padding-top: 5%;
     }
   }
 }

@@ -15,11 +15,13 @@ body {
 
 .app {
   text-align: center; }
-  .app h1 {
+  .app .npm {
+    max-width: 320px; }
+  .app h2 {
     color: #f39c12;
     margin-top: 50px;
     padding: 20px; }
-    .app h1 a {
+    .app h2 a {
       text-decoration: underline;
       text-decoration-style: wavy;
       color: #34495e; }
@@ -51,6 +53,12 @@ body {
     position: absolute;
     text-align: left;
     color: white;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    z-index: 999; }
+  .carouxel__overlay {
+    position: absolute;
     width: 100%;
     top: 25%;
     height: 75%;
@@ -62,22 +70,13 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
     /* IE6-9 */ }
-  .carouxel__headline {
-    position: relative;
-    padding-top: 10%;
-    padding-left: 10%;
-    width: 80%; }
-  .carouxel__intro {
-    position: relative;
-    padding-left: 10%;
-    width: 80%; }
 
 .slides {
   position: relative; }
   .slides .slick-prev, .slides .slick-next {
     z-index: 999;
     position: absolute;
-    top: 50%; }
+    top: 45%; }
   .slides .slick-prev {
     left: 5%; }
   .slides .slick-next {
@@ -122,14 +121,13 @@ body {
   .carouxel__image {
     width: 100%; }
   .carouxel__content {
-    padding: 5%;
     font-size: 60%; } }
 
 @media (min-width: 480px) {
   .carouxel {
     height: 480px; }
     .carouxel__content {
-      font-size: 70%; }
+      font-size: 80%; }
   .slick-dots {
     display: block !important; } }
 
@@ -137,10 +135,4 @@ body {
   .carouxel {
     height: 600px; }
     .carouxel__content {
-      font-size: 100%; }
-    .carouxel__headline {
-      padding-top: 10%; } }
-
-@media (min-width: 1200px) {
-  .carouxel__headline {
-    padding-top: 5%; } }
+      font-size: 100%; } }
