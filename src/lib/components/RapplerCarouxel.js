@@ -13,12 +13,14 @@ export default class RapplerCarouxel extends React.Component {
     super(props)
 
     this.state = {
+      tag: "RapplerCarouxel: ",  
       defaultApi: "http://svc.rappler.com/p/topstories",
       api: props.api,
       settings: props.settings,
       data: [],
 
       // Default rapper api base keys
+      id: "id",
       title: "title",
       description: "metadesc",
       image: [
@@ -93,7 +95,11 @@ export default class RapplerCarouxel extends React.Component {
     var map = data;
     {
       properties.map((key) => {
-        map = map[key];
+        try{
+          map = map[key];
+        }catch(e){
+          console.log(this.state.tag + e);
+        }
       })
     }
 
@@ -120,7 +126,7 @@ export default class RapplerCarouxel extends React.Component {
         <Slider {...this.state.settings}>
           {this.state.data.map((data, key) => {
             return <RapplerCarouxelItem
-              key={this.map(data, this.props.id ? this.props.id : data.id)}
+              key={this.map(data, this.props.id ? this.props.id : this.state.id)}
               title={this.map(data, this.props.title ? this.props.title : this.state.title)}
               description={this.map(data, this.props.description ? this.props.description : this.state.description)}
               image={this.map(data, this.props.image ? this.props.image : this.state.image)} />;
