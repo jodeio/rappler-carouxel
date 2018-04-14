@@ -13,7 +13,7 @@ export default class RapplerCarouxel extends React.Component {
     super(props)
 
     this.state = {
-      tag: "RapplerCarouxel: ",  
+      tag: "RapplerCarouxel: ",
       defaultApi: "http://svc.rappler.com/p/topstories",
       api: props.api,
       settings: props.settings,
@@ -93,15 +93,14 @@ export default class RapplerCarouxel extends React.Component {
 
     // If properties is array proceed
     var map = data;
-    {
-      properties.map((key) => {
-        try{
-          map = map[key];
-        }catch(e){
-          console.log(this.state.tag + e);
-        }
-      })
-    }
+
+    properties.map((key) => {
+      try {
+        map = map[key];
+      } catch (e) {
+        console.log(this.state.tag + e);
+      }
+    })
 
     return map;
   }

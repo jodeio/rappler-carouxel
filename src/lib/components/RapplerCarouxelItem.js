@@ -3,14 +3,6 @@ import React from 'react';
 import '../styles/main.css';
 
 export default class RapplerCarouxelItem extends React.Component {
-    constructor() {
-        super();
-    }
-
-    componentDidMount() {
-        // TODO: Add loading indicator here if necessary
-    }
-
     render() {
         return (
             <div className="carouxel container">
