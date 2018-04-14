@@ -1,5 +1,5 @@
 ## rappler-carouxel
-A responsive and minimalist carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
+A minimalist and api rich carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
 
 ## Live Demo
 [Demo](http://www.jodeio.github.io/rappler-carouxel)
