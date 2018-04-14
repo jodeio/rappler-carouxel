@@ -1,3 +1,9 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+// Colors
+@import url('_colors.scss');
+
 // Reset
 *,
 *:after,
@@ -11,8 +17,24 @@
 
 // Styles
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background:orange !important;
+    font-family: 'Raleway', sans-serif;
+    background:white !important;
+}
+
+.app{
+    text-align: center;
+
+    h1{
+        color: $accent;
+        margin-top: 50px;
+        padding: 20px;
+
+        a{
+            text-decoration:underline ;
+            text-decoration-style: wavy;
+            color: $link;
+        }
+    }
 }
 
 

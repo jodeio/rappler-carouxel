@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 *,
 *:after,
 *:before {
@@ -9,8 +10,19 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background: orange !important; }
+  font-family: 'Raleway', sans-serif;
+  background: white !important; }
+
+.app {
+  text-align: center; }
+  .app h1 {
+    color: #f39c12;
+    margin-top: 50px;
+    padding: 20px; }
+    .app h1 a {
+      text-decoration: underline;
+      text-decoration-style: wavy;
+      color: #34495e; }
 
 .carouxel {
   text-align: center;

@@ -43,10 +43,11 @@ export default class App extends React.Component {
       ]
     };
     return (
-      <div>
-        <h1>Rappler Carouxel's Default Configuration/Embedding</h1>
+      <div className="app">
+        <h1>rappler-carouxel by <a href="https://bit.ly/jodeio">jodeio</a></h1>
+        <h1>Rappler Carouxel's Default Config</h1>
         <RapplerCarouxel {...carouxel}/>
-        <h1>Custom API Configuration</h1>
+        <h1>Custom API Config</h1>
         <RapplerCarouxel {...customCarouxelApi}/>
       </div>
     );
