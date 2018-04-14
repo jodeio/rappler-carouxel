@@ -20,15 +20,15 @@ npm install
 npm start
 ```
 
-## Pre-release
+## Features
 
 - [x] Base rappler top stories api ready
 - [x] Responsive
 - [x] Minimal dependency
 - [x] Carousel is feature rich (built on top of [react-slick](https://github.com/akiran/react-slick))
-- [ ] Custom API integration
+- [x] Custom API integration
 - [ ] Custom carousel item view
-- [ ] Custom property fields (default: headline, title, featured image)
+- [x] Custom property fields (default: headline, title, featured image)
 
 Available via [npm](https://www.npmjs.com/package/rappler-carouxel)
 
@@ -61,6 +61,39 @@ render() {
     return (
       <div>
         <RapplerCarouxel {...carouxel}/>
+      </div>
+    );
+  }
+...
+
+```
+
+### Custom API Integration
+```
+...
+import RapplerCarouxel from 'rappler-carouxel';
+...
+render() {
+    const customCarouxelApi = {
+      // Request data
+      api: "http://example.com/",
+      
+      // Sample response
+      // data: {
+      //  "tid": 1,
+      //  "content_title": "Lorem ipsum",
+      //  "content_description":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt         //                          ut labore et.",
+      //  "cover_image": "http://example.com/media/example.jpg"
+      // }
+      
+      id: "tid",
+      title: "content_title",
+      description: "content_description",
+      image: "cover_image"
+    };
+    return (
+      <div>
+        <RapplerCarouxel {...customCarouxelApi}/>
       </div>
     );
   }
