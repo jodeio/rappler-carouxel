@@ -17,9 +17,37 @@ export default class App extends React.Component {
       //   slidesToScroll: 1
       // }
     };
+    const customCarouxelApi = {
+      // For api, please refer to api changes at docs www.github.com/jodeio/rappler-carouxel#readme.com here
+      api: "http://svc.rappler.com/p/topstories",
+
+      // Important, mapping your api requires id, title, description and image
+      // You may opt to pass
+      // #1 directly the key (eg. "key" data[key] yields data["key"])
+      // #2 or array (eg. 
+      // image =
+      // [
+      //    "images",
+      //    0,
+      //    "full"
+      // ]
+      // yields data["images"][0]["full"]
+
+      id: "id",
+      title: "title",
+      description: "metadesc",
+      image: [
+        "images",
+        0,
+        "full"
+      ]
+    };
     return (
       <div>
+        <h1>Rappler Carouxel's Default Configuration/Embedding</h1>
         <RapplerCarouxel {...carouxel}/>
+        <h1>Custom API Configuration</h1>
+        <RapplerCarouxel {...customCarouxelApi}/>
       </div>
     );
   }

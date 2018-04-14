@@ -11,11 +11,21 @@ import RapplerCarouxelItem from '../components/RapplerCarouxelItem';
 export default class RapplerCarouxel extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {
       defaultApi: "http://svc.rappler.com/p/topstories",
       api: props.api,
       settings: props.settings,
-      data: []
+      data: [],
+
+      // Default rapper api base keys
+      title: "title",
+      description: "metadesc",
+      image: [
+        "images",
+        0,
+        "full"
+      ]
     }
   }
 
@@ -72,7 +82,26 @@ export default class RapplerCarouxel extends React.Component {
     )
   }
 
+  // Maps dynamic property of the response
+  map = (data, properties) => {
+    // If provided properties is not array, retrieve property via key
+    if (!Array.isArray(properties)) {
+      return data[properties];
+    }
+
+    // If properties is array proceed
+    var map = data;
+    {
+      properties.map((key) => {
+        map = map[key];
+      })
+    }
+
+    return map;
+  }
+
   render() {
+
     return (
       <div>
         {/* 
@@ -90,7 +119,11 @@ export default class RapplerCarouxel extends React.Component {
 
         <Slider {...this.state.settings}>
           {this.state.data.map((data, key) => {
-            return <RapplerCarouxelItem key={data.id} title={data.title} description={data.metadesc} image={data.images[0].full} />;
+            return <RapplerCarouxelItem
+              key={this.map(data, this.props.id ? this.props.id : data.id)}
+              title={this.map(data, this.props.title ? this.props.title : this.state.title)}
+              description={this.map(data, this.props.description ? this.props.description : this.state.description)}
+              image={this.map(data, this.props.image ? this.props.image : this.state.image)} />;
           })}
         </Slider>
       </div>
