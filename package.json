@@ -1,6 +1,6 @@
 {
   "name": "rappler-carouxel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": " A minimalist and api rich carousel library built on top of react-slick",
   "main": "build/index.js",
   "scripts": {
