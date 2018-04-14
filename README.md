@@ -32,10 +32,9 @@ npm start
 
 Available via [npm](https://www.npmjs.com/package/rappler-carouxel)
 
-## Install along your existing project/s
+## Installation
 ```
-npm install --save rappler-carouxel
-npm start
+npm install rappler-carouxel or yarn add rappler-carouxel
 ```
 
 ## Usage
