@@ -95,11 +95,7 @@ export default class RapplerCarouxel extends React.Component {
     var map = data;
 
     properties.map((key) => {
-      try {
-        map = map[key];
-      } catch (e) {
-        console.log(this.state.tag + e);
-      }
+      return map[key] ? map = map[key] : map;
     })
 
     return map;
