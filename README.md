@@ -1,8 +1,17 @@
 ## rappler-carouxel
 A minimalist and api rich carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
 
+[![Build Status](https://travis-ci.org/jodeio/rappler-carouxel.svg?branch=master)](https://travis-ci.org/jodeio/rappler-carouxel)
+[![Dependencies](https://img.shields.io/travis/jodeio/rappler-carouxel.svg)]()
+[![Dev Dependencies](https://img.shields.io/travis/dev/jodeio/rappler-carouxel.svg)]()
+[![npm downloads](https://img.shields.io/npm/dm/rappler-carouxel.svg)](https://www.npmjs.com/package/rappler-carouxel)
+
+[![NPM](https://nodei.co/npm/rappler-carouxel.png)](https://npmjs.org/package/rappler-carouxel)
+
+
 ## Live Demo
 [Demo](http://www.jodeio.github.io/rappler-carouxel)
+
 
 ### Run demo project
 ```
