@@ -37,7 +37,7 @@ export default class RapplerCarouxel extends React.Component {
             .json()
             .then(data => {
               this.setState(
-                this.state.data = data,
+                this.state.data = data
               )
               console.log(this.state.data);
             });
@@ -75,9 +75,22 @@ export default class RapplerCarouxel extends React.Component {
   render() {
     return (
       <div>
+        {/* 
+          Default object mapping is base on rappler's top stories api structure
+          ...
+            title: "Lorem ipsum",
+            metadesc: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+            images: [
+              0:
+                full: "www.example.com/media/stories/top/full/sample.jpg"
+                tn: "www.example.com/media/stories/top/tn/sample.jpg"
+            ] 
+          ...
+        */}
+
         <Slider {...this.state.settings}>
           {this.state.data.map((data, key) => {
-            return <RapplerCarouxelItem key={data.id} carouxel={data} />;
+            return <RapplerCarouxelItem key={data.id} title={data.title} description={data.metadesc} image={data.images[0].full} />;
           })}
         </Slider>
       </div>

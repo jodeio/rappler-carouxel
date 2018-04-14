@@ -4,7 +4,7 @@ import '../styles/main.css';
 
 export default class RapplerCarouxelItem extends React.Component {
     constructor() {
-        super()
+        super();
     }
 
     componentDidMount() {
@@ -14,10 +14,10 @@ export default class RapplerCarouxelItem extends React.Component {
     render() {
         return (
             <div className="carouxel container">
-                <img className="carouxel__image" src={this.props.carouxel.images[0].full} />
+                <img className="carouxel__image" src={this.props.image} />
                 <div className="carouxel__content">
-                    <h1 className="carouxel__headline">{this.props.carouxel.title}</h1>
-                    <p className="carouxel__intro">{this.props.carouxel.metadesc}</p>
+                    <h1 className="carouxel__headline">{this.props.title}</h1>
+                    <p className="carouxel__intro">{this.props.description}</p>
                 </div>
             </div>
         );
