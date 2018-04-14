@@ -12,7 +12,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
-    "predeploy": "npm run build",
+    "predeploy": "npm run demo",
     "deploy": "gh-pages -d demo"
   },
   "repository": {
