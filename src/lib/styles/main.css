@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 *,
 *:after,
 *:before {
@@ -23,6 +23,20 @@ body {
       text-decoration: underline;
       text-decoration-style: wavy;
       color: #34495e; }
+  .app ul li {
+    display: inline-block;
+    margin: 5px; }
+    .app ul li a {
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      color: #2c3e50; }
+      .app ul li a:hover {
+        color: #f39c12; }
+
+.demo-2 {
+  margin: auto;
+  max-width: 768px; }
 
 .carouxel {
   text-align: center;

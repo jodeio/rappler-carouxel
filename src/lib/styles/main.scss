@@ -1,8 +1,8 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 // Colors
-@import url('_colors.scss');
+@import '_colors.scss';
 
 // Reset
 *,
@@ -35,6 +35,33 @@ body{
             color: $link;
         }
     }
+
+    ul{
+        li{
+            display: inline-block;
+            margin: 5px;
+
+            a{
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                text-decoration: none;
+                color: $header;
+
+                &:hover{
+                    color: $accent;
+                }
+            }
+        }
+    }
+}
+
+.demo-1{
+    
+}
+
+.demo-2{
+    margin: auto;
+    max-width: 768px;       
 }
 
 
