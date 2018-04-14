@@ -21,7 +21,6 @@ export default class App extends React.Component {
       // For api, please refer to api changes at docs www.github.com/jodeio/rappler-carouxel#readme.com here
       api: "http://svc.rappler.com/p/topstories",
 
-      // Important, mapping your api requires id, title, description and image
       // You may opt to pass
       // #1 directly the key (eg. "key" data[key] yields data["key"])
       // #2 or array (eg. 
