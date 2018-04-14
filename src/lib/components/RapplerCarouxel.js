@@ -26,6 +26,7 @@ export default class RapplerCarouxel extends React.Component {
 
   // Retrieve data
   retrieveData = () => {
+    // Assign default api when no api is set
     var selectedApi = this.state.api ? this.state.api : this.state.defaultApi;
     console.log(selectedApi);
 
