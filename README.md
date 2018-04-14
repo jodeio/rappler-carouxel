@@ -10,7 +10,7 @@ A minimalist and api rich carousel library built on top of [react-slick](https:/
 
 
 ## Live Demo
-[Demo](http://www.jodeio.github.io/rappler-carouxel)
+[Demo](http://jodeio.github.io/rappler-carouxel)
 
 
 ### Run demo project
