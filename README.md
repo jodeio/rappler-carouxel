@@ -1,5 +1,5 @@
 ## rappler-carouxel
-A minimalist and api rich carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
+A minimalist and api ready carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
 
 [![Build Status](https://travis-ci.org/jodeio/rappler-carouxel.svg?branch=master)](https://travis-ci.org/jodeio/rappler-carouxel)
 [![Dependencies](https://img.shields.io/david/jodeio/rappler-carouxel.svg)]()
@@ -21,14 +21,14 @@ npm start
 ```
 
 ## Features
-
-- [x] Base rappler top stories api ready
+- [x] API Ready
+- [x] Default Rappler's top stories api ready
 - [x] Responsive
 - [x] Minimal dependency
 - [x] Carousel is feature rich (built on top of [react-slick](https://github.com/akiran/react-slick))
 - [x] Custom API integration
-- [ ] Custom carousel item view
 - [x] Custom property fields (default: headline, title, featured image)
+- [ ] Custom carousel item view
 
 Available via [npm](https://www.npmjs.com/package/rappler-carouxel)
 
