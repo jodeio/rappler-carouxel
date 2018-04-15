@@ -1,6 +1,6 @@
 {
   "name": "rappler-carouxel",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "description": " A minimalist and api rich carousel library built on top of react-slick",
   "main": "build/index.js",
   "scripts": {
@@ -15,9 +15,6 @@
     "predeploy": "npm run demo",
     "deploy": "gh-pages -d demo"
   },
-  "files": [
-    "build"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jodeio/rappler-carouxel.git"
