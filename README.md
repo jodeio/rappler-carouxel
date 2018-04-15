@@ -41,6 +41,7 @@ npm install rappler-carouxel or yarn add rappler-carouxel
 ```
 ...
 import RapplerCarouxel from 'rappler-carouxel';
+import 'rappler-carouxel/build/css/index.css';
 ...
 render() {
     const carouxel = {
@@ -48,7 +49,7 @@ render() {
       api: "http://svc.rappler.com/p/topstories",
       
       // Here you can replace the settings and behavior of the base slider, 
-      docs available at https://react-slick.neostack.com/docs/example/
+      // docs available at https://react-slick.neostack.com/docs/example/
       // settings: {
       //   autoplay: true,
       //   dots: true,
@@ -72,6 +73,7 @@ render() {
 ```
 ...
 import RapplerCarouxel from 'rappler-carouxel';
+import 'rappler-carouxel/build/css/index.css';
 ...
 render() {
     const customCarouxelApi = {
