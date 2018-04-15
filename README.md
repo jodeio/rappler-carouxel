@@ -101,6 +101,9 @@ render() {
 
 ```
 
+## Additional Configurations
+[View Documentation](https://react-slick.neostack.com/docs/get-started)
+
 ## Author
 [Joshua de Guzman](https://bit.ly/jodeio)
 
