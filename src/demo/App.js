@@ -44,6 +44,7 @@ export default class App extends React.Component {
     return (
       <div className="app">
         <h2>rappler-carouxel by <a href="https://bit.ly/jodeio">jodeio</a></h2>
+        <h5 className="header-description">🎠 A minimalist and api ready carousel library built on top of react-slick</h5>
 
         <ul>
           <li><img src="https://travis-ci.org/jodeio/rappler-carouxel.svg?branch=master" alt="build-status" /></li>
