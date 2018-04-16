@@ -12,13 +12,17 @@ A minimalist and api ready carousel library built on top of [react-slick](https:
 ## Live Demo
 [Demo](http://jodeio.github.io/rappler-carouxel)
 
-
 ### Run demo project
 ```
 git clone https://github.com/jodeio/rappler-carouxel.git
 npm install
 npm start
 ```
+
+## Prerequisites
+
+Bootstrapped with:
+- [create-react-library](https://github.com/DimiMikadze/create-react-library)
 
 ## Features
 - [x] API Ready
