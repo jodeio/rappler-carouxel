@@ -12,13 +12,17 @@ A minimalist and api ready carousel library built on top of [react-slick](https:
 ## Live Demo
 [Demo](http://jodeio.github.io/rappler-carouxel)
 
-
 ### Run demo project
 ```
 git clone https://github.com/jodeio/rappler-carouxel.git
 npm install
 npm start
 ```
+
+## Prerequisites
+
+Bootstrapped with:
+- [create-react-library](https://github.com/DimiMikadze/create-react-library)
 
 ## Features
 - [x] API Ready
@@ -44,20 +48,37 @@ import RapplerCarouxel from 'rappler-carouxel';
 import 'rappler-carouxel/build/css/index.css';
 ...
 render() {
+    return (
+      <div>
+        <RapplerCarouxel {...carouxel}/>
+      </div>
+    );
+  }
+...
+```
+
+You can also override the default carousel configurations
+
+```
+...
+import RapplerCarouxel from 'rappler-carouxel';
+import 'rappler-carouxel/build/css/index.css';
+...
+render() {
     const carouxel = {
-      // For api, please refer to api changes at docs www.github.com/jodeio/rappler-carouxel#readme.com here
-      api: "http://svc.rappler.com/p/topstories",
+        // Default api set
+        api: "http://svc.rappler.com/p/topstories",
       
-      // Here you can replace the settings and behavior of the base slider, 
-      // docs available at https://react-slick.neostack.com/docs/example/
-      // settings: {
-      //   autoplay: true,
-      //   dots: true,
-      //   infinite: true,
-      //   speed: 100,
-      //   slidesToShow: 1,
-      //   slidesToScroll: 1
-      // }
+        // Here you can replace the settings and behavior of the base slider, 
+        // docs available at https://react-slick.neostack.com/docs/example/
+        settings: {
+        autoplay: true,
+        dots: true,
+        infinite: true,
+        speed: 100,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
     };
     return (
       <div>
@@ -66,7 +87,6 @@ render() {
     );
   }
 ...
-
 ```
 
 ### Custom API Integration
