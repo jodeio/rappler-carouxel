@@ -14,7 +14,7 @@ export default class RapplerCarouxel extends React.Component {
 
     this.state = {
       tag: "RapplerCarouxel: ",
-      defaultApi: "http://svc.rappler.com/p/topstories",
+      defaultApi: "https://svc.rappler.com/p/topstories",
       api: props.api,
       settings: props.settings,
       data: [],
