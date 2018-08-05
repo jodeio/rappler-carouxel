@@ -1,5 +1,5 @@
 ## rappler-carouxel
-A minimalist and api ready carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
+A minimalist and API ready carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
 
 [![Build Status](https://travis-ci.org/joshuadeguzman/rappler-carouxel.svg?branch=master)](https://travis-ci.org/joshuadeguzman/rappler-carouxel)
 [![Dependencies](https://img.shields.io/david/joshuadeguzman/rappler-carouxel.svg)]()
