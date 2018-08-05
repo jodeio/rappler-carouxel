@@ -1,20 +1,20 @@
 ## rappler-carouxel
 A minimalist and api ready carousel library built on top of [react-slick](https://github.com/akiran/react-slick)
 
-[![Build Status](https://travis-ci.org/jodeio/rappler-carouxel.svg?branch=master)](https://travis-ci.org/jodeio/rappler-carouxel)
-[![Dependencies](https://img.shields.io/david/jodeio/rappler-carouxel.svg)]()
-[![Dev Dependencies](https://img.shields.io/david/dev/jodeio/rappler-carouxel.svg)]()
+[![Build Status](https://travis-ci.org/joshuadeguzman/rappler-carouxel.svg?branch=master)](https://travis-ci.org/joshuadeguzman/rappler-carouxel)
+[![Dependencies](https://img.shields.io/david/joshuadeguzman/rappler-carouxel.svg)]()
+[![Dev Dependencies](https://img.shields.io/david/dev/joshuadeguzman/rappler-carouxel.svg)]()
 [![npm downloads](https://img.shields.io/npm/dm/rappler-carouxel.svg)](https://www.npmjs.com/package/rappler-carouxel)
 
 [![NPM](https://nodei.co/npm/rappler-carouxel.png)](https://npmjs.org/package/rappler-carouxel)
 
 
 ## Live Demo
-[Demo](http://jodeio.github.io/rappler-carouxel)
+[Demo](http://joshuadeguzman.github.io/rappler-carouxel)
 
 ### Run demo project
 ```
-git clone https://github.com/jodeio/rappler-carouxel.git
+git clone https://github.com/joshuadeguzman/rappler-carouxel.git
 npm install
 npm start
 ```
@@ -127,7 +127,7 @@ render() {
 [View Documentation](https://react-slick.neostack.com/docs/get-started)
 
 ## Author
-[Joshua de Guzman](https://bit.ly/jodeio)
+[Joshua de Guzman](https://bit.ly/joshuadeguzman)
 
 ## License
 ```
