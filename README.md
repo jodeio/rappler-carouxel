@@ -13,7 +13,7 @@ A minimalist and API ready carousel library built on top of [react-slick](https:
 [Demo](http://joshuadeguzman.github.io/rappler-carouxel)
 
 ### Run demo project
-```
+```bash
 git clone https://github.com/joshuadeguzman/rappler-carouxel.git
 npm install
 npm start
@@ -32,17 +32,16 @@ Bootstrapped with:
 - [x] Carousel is feature rich (built on top of [react-slick](https://github.com/akiran/react-slick))
 - [x] Custom API integration
 - [x] Custom property fields (default: headline, title, featured image)
-- [ ] Custom carousel item view
 
 Available via [npm](https://www.npmjs.com/package/rappler-carouxel)
 
 ## Installation
-```
-npm install rappler-carouxel or yarn add rappler-carouxel
+```bash
+npm install rappler-carouxel
 ```
 
 ## Usage
-```
+```js
 ...
 import RapplerCarouxel from 'rappler-carouxel';
 import 'rappler-carouxel/build/css/index.css';
@@ -59,7 +58,7 @@ render() {
 
 You can also override the default carousel configurations
 
-```
+```js
 ...
 import RapplerCarouxel from 'rappler-carouxel';
 import 'rappler-carouxel/build/css/index.css';
@@ -90,7 +89,7 @@ render() {
 ```
 
 ### Custom API Integration
-```
+```js
 ...
 import RapplerCarouxel from 'rappler-carouxel';
 import 'rappler-carouxel/build/css/index.css';
